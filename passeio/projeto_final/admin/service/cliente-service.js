@@ -1,7 +1,7 @@
-const baseUrl = 'https://my-json-server.typicode.com/ArthurWillianAFrancisco/Meu-passeio/profile';
+const baseUrl = 'http://localhost:3000/profile';
 
 const listaClientes = () =>  {
-    return fetch(`http://localhost:3000/profile`)
+    return fetch(`${baseUrl}`)
     .then(resposta => {
         if(resposta.ok){
             return resposta.json()
@@ -11,7 +11,7 @@ const listaClientes = () =>  {
 }
 
 const criaCliente = (nome, nome_lugar, local_pais, cidade, descricao) => { 
-    return fetch('http://localhost:3000/profile', {
+    return fetch(`${baseUrl}`, {
         method: 'POST', 
         headers: {
             'Content-Type' : 'application/json'
@@ -33,7 +33,7 @@ const criaCliente = (nome, nome_lugar, local_pais, cidade, descricao) => {
 }
 
 const removeCliente = (id) => { 
-    return fetch(`http://localhost:3000/profile/${id}`, {
+    return fetch(`${baseUrl}/${id}`, {
         method: 'DELETE'
     })
     .then( resposta => { 
@@ -44,7 +44,7 @@ const removeCliente = (id) => {
 }
  
 const detalhaCliente = (id) => { 
-    return fetch(`http://localhost:3000/profile/${id}`)
+    return fetch(`${baseUrl}/${id}`)
     .then(resposta => { 
         if(resposta.ok){
             return resposta.json()
@@ -55,7 +55,7 @@ const detalhaCliente = (id) => {
 }
 
 const atualizaCliente = (id, nome, nome_lugar, local_pais, cidade, descricao) => {
-    return fetch(`http://localhost:3000/profile/${id}`, {
+    return fetch(`${baseUrl}/${id}`, {
         method: 'PUT',
         headers: { 
             'Content-type' : 'application/json'
