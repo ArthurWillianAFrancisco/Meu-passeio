@@ -10,8 +10,8 @@ const listaClientes = () =>  {
     })
 }
 
-const criaCliente = (nome, nome_lugar, local_pais, cidade, descricao, lati, long) => { 
-    return fetch(`${baseUrl}`, {
+const criaCliente = (nome, nome_lugar, local_pais, cidade, descricao) => { 
+    return fetch('http://localhost:3000/profile', {
         method: 'POST', 
         headers: {
             'Content-Type' : 'application/json'
@@ -22,8 +22,6 @@ const criaCliente = (nome, nome_lugar, local_pais, cidade, descricao, lati, long
             local_pais: local_pais,
             cidade: cidade,
             descricao: descricao,
-            lati: objetoCoordenadas.lati,
-            long: objetoCoordenadas.long
         })
     })
     .then( resposta => {
