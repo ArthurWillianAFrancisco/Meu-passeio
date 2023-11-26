@@ -1,7 +1,7 @@
 const baseUrl = 'https://meu-passeio-git-main-arthurs-projects-1d623280.vercel.app/passeio/projeto_final/admin/db.json';
 
 const listaClientes = () =>  {
-    return fetch(`${baseUrl}`)
+    return fetch(`${baseUrl}/profile`)
     .then(resposta => {
         if(resposta.ok){
             return resposta.json()
