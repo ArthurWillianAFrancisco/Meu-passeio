@@ -1,7 +1,7 @@
 const baseUrl = 'https://my-json-server.typicode.com/ArthurWillianAFrancisco/Meu-passeio/profile';
 
 const listaClientes = () =>  {
-    return fetch(`${baseUrl}/profile`)
+    return fetch(`${baseUrl}`)
     .then(resposta => {
         if(resposta.ok){
             return resposta.json()
