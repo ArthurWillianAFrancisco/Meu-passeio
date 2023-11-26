@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3000/db.json';
+const baseUrl = 'http://localhost:3000/db';
 
 const listaClientes = () =>  {
     return fetch(`${baseUrl}/profile`)
