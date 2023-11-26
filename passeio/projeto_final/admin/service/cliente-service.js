@@ -1,4 +1,4 @@
-const baseUrl = 'https://meu-passeio-git-main-arthurs-projects-1d623280.vercel.app/passeio/projeto_final/admin/db.json';
+const baseUrl = 'https://meu-passeio.vercel.app/passeio/projeto_final/admin/db.json';
 
 const listaClientes = () =>  {
     return fetch(`${baseUrl}/profile`)
