@@ -1,4 +1,4 @@
-const baseUrl = 'https://my-json-server.typicode.com/ArthurWillianAFrancisco/Meu-passeio/profile';
+const baseUrl = 'http://localhost:3000/profile';
 
 const listaClientes = () =>  {
     return fetch(`${baseUrl}`)
