@@ -1,4 +1,4 @@
-const baseUrl = 'https://equinox-neon-rhubarb.glitch.me';
+const baseUrl = 'https://my-json-server.typicode.com/ArthurWillianAFrancisco/Meu-passeio/profile';
 
 const listaClientes = () =>  {
     return fetch(`${baseUrl}`)
