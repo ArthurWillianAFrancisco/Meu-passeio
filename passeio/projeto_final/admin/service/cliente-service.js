@@ -9,7 +9,7 @@ const PORT = 3000;
 app.use(bodyParser.json());
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/seu-banco-de-dados', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/mongodb://usuario:123@localhost:27017/seu-banco-de-dados', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const clienteSchema = new mongoose.Schema({
   nome: String,
