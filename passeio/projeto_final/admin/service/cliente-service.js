@@ -1,7 +1,7 @@
 const baseUrl = 'https://arthurwillianafrancisco.github.io/Meu-passeio/db.json';
 
 const listaClientes = () =>  {
-    return fetch(`${baseUrl}/profile`)
+    return fetch(`${baseUrl}`)
     .then(resposta => {
         if(resposta.ok){
             return resposta.json()
