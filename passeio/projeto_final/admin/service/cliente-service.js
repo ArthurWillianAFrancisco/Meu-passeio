@@ -1,4 +1,4 @@
-const baseUrl = 'https://arthurwillianafrancisco.github.io/Meu-passeio/db.json';
+const baseUrl = '../db.json/profile';
 
 const listaClientes = () =>  {
     return fetch(`${baseUrl}`)
