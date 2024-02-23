@@ -2,7 +2,7 @@
 const baseUrl = src="../../db.json/profile";
 
 const listaClientes = () =>  {
-    return fetch(`src="../../db.json/profile"`)
+    return fetch(src="../../db.json/profile`)
     .then(resposta => {
         if(resposta.ok){
             return resposta.json()
@@ -12,7 +12,7 @@ const listaClientes = () =>  {
 }
 
 const criaCliente = (nome, nome_lugar, local_pais, cidade, descricao) => { 
-    return fetch(`src="../../db.json/profile"`, {
+    return fetch(src="../../db.json/profile", {
         method: 'POST', 
         headers: {
             'Content-Type' : 'application/json'
