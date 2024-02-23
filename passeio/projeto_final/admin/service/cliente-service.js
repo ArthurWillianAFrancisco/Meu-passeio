@@ -2,7 +2,7 @@
 const baseUrl = src="../../db.json/profile";
 
 const listaClientes = () =>  {
-    return fetch(`${baseUrl}`)
+    return fetch(`src="../../db.json/profile"`)
     .then(resposta => {
         if(resposta.ok){
             return resposta.json()
@@ -12,7 +12,7 @@ const listaClientes = () =>  {
 }
 
 const criaCliente = (nome, nome_lugar, local_pais, cidade, descricao) => { 
-    return fetch(`${baseUrl}`, {
+    return fetch(`src="../../db.json/profile"`, {
         method: 'POST', 
         headers: {
             'Content-Type' : 'application/json'
@@ -34,7 +34,7 @@ const criaCliente = (nome, nome_lugar, local_pais, cidade, descricao) => {
 }
 
 const removeCliente = (id) => { 
-    return fetch(`${baseUrl}/${id}`, {
+    return fetch(`src="../../db.json/profile/${id}"`, {
         method: 'DELETE'
     })
     .then( resposta => { 
@@ -45,7 +45,7 @@ const removeCliente = (id) => {
 }
  
 const detalhaCliente = (id) => { 
-    return fetch(`${baseUrl}/${id}`)
+    return fetch(`src="../../db.json/profile"/${id}`)
     .then(resposta => { 
         if(resposta.ok){
             return resposta.json()
@@ -56,7 +56,7 @@ const detalhaCliente = (id) => {
 }
 
 const atualizaCliente = (id, nome, nome_lugar, local_pais, cidade, descricao) => {
-    return fetch(`${baseUrl}/${id}`, {
+    return fetch(`src="../../db.json/profile"/${id}`, {
         method: 'PUT',
         headers: { 
             'Content-type' : 'application/json'
