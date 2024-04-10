@@ -17,7 +17,7 @@ const criaNovaLinha = (nome, nome_lugar, local_pais, cidade, descricao ,id) =>  
             <button class="btn btn-danger botao-simples botao-simples--excluir" type="button">Excluir</button></li>
             <a href="../telas/mapa.html"<button type="button" class="btn btn-info">Mapa</button></a>
         </div>
-        <div class="border-bottom border-dark"></div?
+        <div class="border-bottom border-dark"></div>
     </div>
                   `
 
