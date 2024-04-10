@@ -60,4 +60,3 @@ const render = async () =>  {
     
 }
 
-render()
