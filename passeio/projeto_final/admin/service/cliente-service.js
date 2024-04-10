@@ -88,7 +88,7 @@
 
     
    // const baseUrl = 'https://meu-passeio-8ythutn5t-arthurs-projects-1d623280.vercel.app/passeio/projeto_final/admin/db.json';
-    const baseUrl = href="../db.json/profile";
+    const baseUrl = href="../db.json";
     
     const listaClientes = () =>  {
         return fetch(`${baseUrl}`)
