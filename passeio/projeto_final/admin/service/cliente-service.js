@@ -86,7 +86,8 @@
 //     atualizaCliente
 // }
 
-const baseUrl = '../db.json/profile';
+
+const baseUrl = '..db.json/profile';
 
 const listaClientes = () =>  {
     return fetch(`${baseUrl}`)
